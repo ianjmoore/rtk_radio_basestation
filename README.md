@@ -1,15 +1,23 @@
-# FreeFly RTK Base Station Configuration
+# RTK Radio Base Station Tutorial
 
-### On Windows: ###
-#### Configure Base Station RTCM 3 Output to NVM:
+## FreeFly RTK Base Station Configuration
+### On Windows: Configure Base Station NVM to Output RTCM 3:
 1. Download or clone this repo.
 2. Download and install v22.07 of [u-center](https://www.u-blox.com/en/product/u-center) for "F9/M9 products and below". u-center is u-blox's GNSS evaluation software (Windows only). We will use u-center to configure the basestation to output RTCM 3 on startup (OS independent). <br/> <img src="FreeFly_RTK\download_u-center_v22.07.png" width="250">
 3. Plug in FreeFly RTK GPS base station first, via USB 
 4. Open u-center and select the newly initialized COM port. <br/> <img src="FreeFly_RTK\u-center_com_port.png" width="300">
 5. Click Tools > Receiver Configuration... <br/> <img src="FreeFly_RTK\u-center_receiver_configuration.png" width="400">
 6. Click the directory browser and select Freefly_RTCM_MSM7_config.txt where you have cloned this repo. <br/> <img src="FreeFly_RTK\u-center_select_config_file.png" width="400">
-7. Click "Transfer file -> GNSS".<br\>
+7. Click "Transfer file -> GNSS".<br/>
+8. Click the circled save settings to Non-Volatile Memory button:<br/> <img src="FreeFly_RTK\u-center_write_to_nvm.png">
+### On Windows: Survey in the Base Station: 
+Surveying in a basestation is a critical step to obtaining accurate global coordinate frame RTK corrections from a base station. Once the base station is physically installed in its stationary location, there are multiple options for surveying in the base station depending on accuracy requirements. If only relative position accuracy is required, then a quick survey is sufficient. If global position accuracy is required, then a longer suervey must be performed. The higher the global position accuracy required, the longer the basestation must survey in its global position.<br/>
+#### **Option 1**: Quick Survey (60 s)
+1. The FreeflyRTCM_MSM7
 
+#### **Option 2**: NTRIP Initialized Survey
+
+#### **Option 3**: Long Survey (24 h)
 
 # byte_shuffle
 
@@ -31,5 +39,6 @@ and [FRX PRO Pair 900 MHz radios](https://store.freeflysystems.com/products/frx-
     * `node byte_shuffle_client.js` 
 
 
-### System Setup Block Diagram ![Alt](/diagrams/RTK_basestation_byte_shuffle_diag.png "RTK_basestation_byte_shuffle_diag.png")
+### System Setup Block Diagram 
+<img src="diagrams\RTK_basestation_byte_shuffle_diag.png" width="400">
 
