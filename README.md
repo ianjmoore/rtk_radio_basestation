@@ -11,7 +11,7 @@
 7. Click "Transfer file -> GNSS".<br/>
 8. Click the circled save settings to Non-Volatile Memory button:<br/> <img src="FreeFly_RTK\u-center_write_to_nvm.png">
 ### On Windows: Survey in the Base Station: 
-Surveying in a basestation is a critical step to obtaining accurate global coordinate frame RTK corrections from a base station. Once the base station is physically installed in its stationary location, there are multiple options for surveying in the base station depending on accuracy requirements. If only relative position accuracy is required, then a quick survey is sufficient. If global position accuracy is required, then a longer suervey must be performed. The higher the global position accuracy required, the longer the basestation must survey in its global position.<br/>
+Surveying in a basestation is a critical step to obtaining accurate global coordinate frame RTK corrections from a base station. Once the base station is physically installed in its stationary location, there are multiple options for surveying in the base station depending on accuracy requirements. If only relative position accuracy is required, then a quick survey is sufficient. If global position accuracy is required, then a longer survey must be performed. The higher the global position accuracy required, the longer the basestation must survey in its global position.<br/>
 #### **Option 1**: Quick Survey (60 s)
 1. The FreeflyRTCM_MSM7
 
