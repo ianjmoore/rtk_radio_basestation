@@ -13,11 +13,13 @@
 ### On Windows: Survey in the Base Station: 
 Surveying in a basestation is a critical step to obtaining accurate global coordinate frame RTK corrections from a base station. Once the base station is physically installed in its stationary location, there are multiple options for surveying in the base station depending on accuracy requirements. If only relative position accuracy is required, then a quick survey is sufficient. If global position accuracy is required, then a longer survey must be performed. The higher the global position accuracy required, the longer the basestation must survey in its global position.<br/>
 #### **Option 1**: Quick Survey (60 s)
-1. The FreeflyRTCM_MSM7
+1. The FreeflyRTCM_MSM7 configuration file enables an accelerated survey of 60 s. For applications with non-exacting position requirements, this option may be sufficient. For applications that require higher precision, Option 2 or 3 are recommended. <br/>
 
 #### **Option 2**: NTRIP Initialized Survey
+1. This option reduces the survey-in time by providing an accurate RTK position solution via NTRIP corrections. 
 
 #### **Option 3**: Long Survey (24 h)
+1. The Long Survey option provides a configuration file for a 24 h survey to enable high accuracy position. 
 
 # byte_shuffle
 
